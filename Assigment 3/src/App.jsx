@@ -5,7 +5,7 @@ import NewExpense from './components/newExpenses/NewExpense';
 import Expenses from './components/expenses/Expenses';
 
 import ExpensesFilter from './components/expenses/ExpenseFilter';
-const DUMMY_EXPENSES = [
+const data = [
   {
     id: 'e1',
     title: 'Toilet Paper',
@@ -28,7 +28,7 @@ const DUMMY_EXPENSES = [
 ];
 
 const App = () => {
-  const [expenses, setExpenses] = useState(DUMMY_EXPENSES);
+  const [expenses, setExpenses] = useState(data);
 
   const addExpenseHandler = (expense) => {
     setExpenses((prevExpenses) => {
